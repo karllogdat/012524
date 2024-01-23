@@ -1,0 +1,68 @@
+@font-face {
+  font-family: FreeSans;
+  src: url(./fonts/FreeSans.ttf);
+}
+
+@font-face {
+  font-family: FreeSansBold;
+  src: url(./fonts/FreeSansBold.ttf);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+        scroll-behavior: smooth;
+  }
+}
+
+*:not(hr) {
+  box-sizing: border-box;
+  border: none;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Lists */
+menu:not(article menu),
+ol:not(article ol),
+ul:not(article ul) {
+  list-style: none;
+}
+
+menu,
+ol,
+ul {
+  padding-left: 0;
+}
+
+article ol,
+article ul {
+  list-style-position: inside;
+}
+
+a {
+  /* Places underlines below the descenders */
+  text-underline-position: under;
+
+
+  /* Sets the thickness as a percentage of the font size */
+  text-decoration-thickness: 8;
+}
+
+label,
+button,
+select,
+summary,
+[type=radio],
+[type=submit],
+[type=checkbox] {
+  cursor: pointer;
+}
+
+html {
+  font-size: 62.5%; /* (62.5/100) * 16px = 10px */
+
+  -webkit-text-size-adjust: none; /* for iOS Safari */
+  text-size-adjust: none; /* for other mobile browsers */
+}
